@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>AdminLTE 3 | Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -27,6 +28,7 @@
   <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
+<main class="app-content" id="app">
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -196,8 +198,14 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    @include('admin.index')
-    @yield('content')
+      <div class="content">
+          @include('admin.index')
+      </div>
+
+      <div class="content">
+          @yield('content')
+      </div>
+
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

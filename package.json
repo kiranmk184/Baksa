@@ -10,9 +10,20 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "axios": "^0.21.1",
+        "cross-env": "^5.1",
+        "laravel-mix": "^6.0.18",
+        "lodash": "^4.17.5",
+        "postcss": "8.1",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "vue": "^2.6.12",
+        "vue-loader": "^15.9.5",
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^5.9.0"
+    },
+    "dependencies": {
+        "vue-swal": "^0.1.0"
     }
 }

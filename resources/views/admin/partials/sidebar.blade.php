@@ -13,7 +13,18 @@
           <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+            <a class="nav-link" data-toggle="dropdown" href="">
+                <h5>Admin Name</h5>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="{{ route('admin.logout') }}" class="dropdown-item">
+                    <h5 class="dropdown-item-title">
+                        Logout
+                    </h5>
+                </a>
+            </div>
+            <div><h6 style="color:gainsboro">Role :</h6></div>
+            <div><h6 style="color:gainsboro">Status :</h6></div>
         </div>
       </div>
 
@@ -51,6 +62,29 @@
               </p>
             </a>
           </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.attributes.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Attributes
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.attributes.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Attributes
+                    </p>
+                </a>
+            </li><li class="nav-item">
+                <a href="{{ route('admin.brands.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-briefcase"></i>
+                    <p>
+                        Brands
+                    </p>
+                </a>
+            </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -116,15 +150,15 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
-              </li> 
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="{{ route('admin.settings') }}" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-cogs"></i>
                 <p>Settings</p>
             </a>
-          </li> 
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
